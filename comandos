@@ -1,7 +1,14 @@
+Comando para ver las instancias de docker en ejecución:
+
+docker ps
+
+
+Comando para acceder a postgres de la instancia de docker
+
 docker exec -it fastapi-docker-db-1 psql -U usuario -d notasdb
 
 
-
+Comando para crear la tabla
 
 CREATE TABLE notes (
     id SERIAL PRIMARY KEY,
