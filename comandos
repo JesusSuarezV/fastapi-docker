@@ -1,0 +1,10 @@
+docker exec -it fastapi-docker-db-1 psql -U usuario -d notasdb
+
+
+
+
+CREATE TABLE notes (
+    id SERIAL PRIMARY KEY,
+    title TEXT,
+    content TEXT
+);
